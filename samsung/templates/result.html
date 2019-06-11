@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<h1>글자를 카운트한 결과입니다.</h1>
+{{fulltext}}
+{{total}}
+{% for word, countTotal in dictionary %}
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">{{word}} : {{countTotal}}</h4>
+  <hr> 
+</div>
+{% endfor %}
